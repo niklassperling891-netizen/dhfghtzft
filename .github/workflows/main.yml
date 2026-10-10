@@ -1,0 +1,38 @@
+name: Build Minecraft Mod
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v6
+
+      - name: Java 21 einrichten
+        uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Gradle einrichten
+        uses: gradle/actions/setup-gradle@v6
+        with:
+          gradle-version: '9.2.1'
+
+      - name: Mod bauen
+        run: gradle build
+
+      - name: Mod-Datei bereitstellen
+        uses: actions/upload-artifact@v4
+        with:
+          name: QuickStack-ChestDrop
+          path: build/libs/*.jar
+          if-no-files-found: error
