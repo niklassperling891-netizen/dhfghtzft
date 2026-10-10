@@ -1,0 +1,9 @@
+{
+  "key.quickstack.drop": "Alle gleichen Items herauswerfen",
+  "key.quickstack.collect": "Alle gleichen Items einsammeln",
+  "key.category.inventory": "Inventar",
+  "message.quickstack.none": "Keine passenden Items gefunden",
+  "message.quickstack.dropped": "%1$s × %2$s herausgeworfen",
+  "message.quickstack.collected": "%1$s × %3$s eingesammelt",
+  "message.quickstack.partial": "%1$s × %3$s eingesammelt, %2$s verbleiben im Container"
+}

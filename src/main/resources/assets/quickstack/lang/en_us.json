@@ -1,0 +1,9 @@
+{
+  "key.quickstack.drop": "Drop all matching items",
+  "key.quickstack.collect": "Collect all matching items",
+  "key.category.inventory": "Inventory",
+  "message.quickstack.none": "No matching items found",
+  "message.quickstack.dropped": "Dropped %1$s × %2$s",
+  "message.quickstack.collected": "Collected %1$s × %3$s",
+  "message.quickstack.partial": "Collected %1$s × %3$s; %2$s remain in the container"
+}

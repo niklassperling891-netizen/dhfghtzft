@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "quickstack",
+  "version": "${version}",
+  "name": "QuickStack & ChestDrop",
+  "description": "Move or drop matching container stacks with configurable keys.",
+  "authors": ["QuickStack"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": { "client": ["dev.quickstack.client.QuickStackClient"] },
+  "mixins": ["quickstack.client.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
